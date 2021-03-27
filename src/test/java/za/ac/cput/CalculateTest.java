@@ -33,7 +33,7 @@ public class CalculateTest {
     //    failing test
     @Test
     public void testMultiplication(){
-        int result = calculate.multiplication(1,8);
+        int result = calculate.multiplication(1,2);
         assertEquals(8, result);
     }
 
