@@ -6,7 +6,9 @@ package za.ac.cput;
  * @Date: 26/03/2021
  */
 
-public class App 
-{
+public class Calculate {
+    public int multiplication(int a, int b) {
+        return a*b;
+    }
 
 }
