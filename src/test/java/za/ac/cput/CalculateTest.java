@@ -1,40 +1,47 @@
 package za.ac.cput;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /**
  * @Author: Cole Hanekom
  * @Student Number: 217267556
  * @Date: 26/03/2021
  */
 
-public class CalculateTest {
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+
+class CalculateTest {
 
     private Calculate calculate;
+    private Calculate calculate1;
+    private Calculate calculate2;
+    private Calculate calculate3;
 
-    public  CalculateTest(){
-
-    }
-
-    @BeforeClass
-    public static void setUpClass(){
-
-    }
-
-    @Before
-    public void setUp(){
+    @BeforeEach
+    void setUp() {
         this.calculate = new Calculate();
+        calculate1 = new Calculate();
+        calculate2 = new Calculate();
+        calculate3 =  calculate1;
     }
 
-    //    failing test
+    //  Failing Test
     @Test
     public void testMultiplication(){
-        int result = calculate.multiplication(1,2);
+        int result = calculate.multiplication(1,8);
         assertEquals(8, result);
     }
 
+    // Object Identity
+    @Test
+    void testIdentity(){
+        assertSame(calculate1,calculate3);
+    }
+
+    //Object Equality
+    @Test
+    void testEquality(){
+        assertEquals(calculate1,calculate3);
+    }
 }
