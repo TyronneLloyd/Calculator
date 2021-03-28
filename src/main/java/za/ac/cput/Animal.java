@@ -12,6 +12,16 @@ public class Animal {
     private String name;
     private String breed;
 
+    public Animal() {
+    }
+
+    public Animal(String type, int age, String name, String breed) {
+        this.type = type;
+        this.age = age;
+        this.name = name;
+        this.breed = breed;
+    }
+
     public String getType() {
         return type;
     }
@@ -42,5 +52,8 @@ public class Animal {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+    public void animalSound(String noise) {
+        System.out.println(this.name + ": '"+ noise +"'");
     }
 }
