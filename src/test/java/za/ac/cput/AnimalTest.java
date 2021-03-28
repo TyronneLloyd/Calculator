@@ -6,8 +6,8 @@ package za.ac.cput;
  * @Description: Testing of the Animal Class
  */
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalTest {
@@ -37,6 +37,17 @@ class AnimalTest {
     }
     @Test
     void failingTest() {
+        assertSame(animal1.getBreed(), animal3.getBreed());
 
+        }
+    @Test
+    void timeouts() {
+
+    }
+
+    @Disabled
+    @Test
+    void disablingTest() {
+        assertNotEquals(animal1.getAge(), animal2.getAge());
     }
 }
