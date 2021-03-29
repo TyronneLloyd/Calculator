@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.Calculator;
 
 /**
  * @Author: Cole Hanekom
@@ -63,5 +63,7 @@ class CalculateTest {
     @Disabled("Disabled to demonstrate disabling test")
     public void testDisabled(){
         System.out.println("This should be disabled to demonstrate disabling test");
+        double result = calculate.square(3);
+        assertEquals(9, result);
     }
 }
