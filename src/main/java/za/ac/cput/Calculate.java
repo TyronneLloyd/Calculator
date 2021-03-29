@@ -7,8 +7,8 @@ package za.ac.cput;
  */
 
 public class Calculate {
-    public int multiplication(int a, int b) {
-        return a*b;
+    public double square(double i) {
+        return i*i;
     }
 
 }

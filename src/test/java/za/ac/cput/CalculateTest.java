@@ -7,9 +7,7 @@ package za.ac.cput;
  */
 
 import org.junit.jupiter.api.*;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 
 class CalculateTest {
 
@@ -26,11 +24,17 @@ class CalculateTest {
         calculate3 =  calculate1;
     }
 
+    @Test
+    public void testSquare(){
+        double result = calculate.square(2);
+        assertEquals(4, result);
+    }
+
     // Failing Test
     @Test
-    public void testMultiplication(){
-        int result = calculate.multiplication(1,8);
-        assertEquals(8, result);
+    public void testFail(){
+        double result = calculate.square(2);
+        assertEquals(4, result);
         fail("This test should fail");
     }
 
