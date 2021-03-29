@@ -6,8 +6,8 @@ package za.ac.cput;
  * @Date: 26/03/2021
  */
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -26,11 +26,12 @@ class CalculateTest {
         calculate3 =  calculate1;
     }
 
-    //  Failing Test
+    // Failing Test
     @Test
     public void testMultiplication(){
         int result = calculate.multiplication(1,8);
         assertEquals(8, result);
+        fail("This test should fail");
     }
 
     // Object Identity
@@ -39,9 +40,24 @@ class CalculateTest {
         assertSame(calculate1,calculate3);
     }
 
-    //Object Equality
+    // Object Equality
     @Test
     void testEquality(){
         assertEquals(calculate1,calculate3);
+    }
+
+    // Timeouts
+    @Test
+    @Timeout(6)
+    public void timeoutTest() throws InterruptedException {
+        Thread.sleep(5000);
+        System.out.println("Test passed within the time");
+    }
+
+    // Disabling Test
+    @Test
+    @Disabled("Disabled to demonstrate disabling test")
+    public void testDisabled(){
+        System.out.println("This should be disabled to demonstrate disabling test");
     }
 }
