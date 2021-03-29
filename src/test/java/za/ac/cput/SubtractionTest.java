@@ -34,19 +34,21 @@ class SubtractionTest {
         firstInput = answer;
     }
 
-    @Disabled
-    @Test
-    void objectIdentity2(){
-        assertSame(firstInput, secondInput);
-    }
-
     @Test
     @Timeout(5)
     void TimeoutCheck() {
         for(int i=0; i<5; i++) {
             System.out.println(i);
         }
-        }
+    }
+
+    @Disabled
+    @Test
+    void objectIdentity2(){
+        assertSame(firstInput, secondInput);
+    }
+
+
 
     @AfterEach
     void tearDown() {
