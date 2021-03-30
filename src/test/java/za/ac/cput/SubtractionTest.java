@@ -1,5 +1,13 @@
 package za.ac.cput;
 
+/*
+    Elrich Herman
+    218150040
+    Assignment 1 - ADP3
+    30/03/2021
+ */
+
+
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

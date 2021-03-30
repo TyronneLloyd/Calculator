@@ -1,5 +1,11 @@
 package za.ac.cput;
 
+/*
+    Elrich Herman
+    218150040
+    Assignment 1 - ADP3
+    30/03/2021
+ */
 
 public class Subtraction
 {
