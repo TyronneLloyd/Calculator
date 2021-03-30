@@ -6,5 +6,13 @@ package za.ac.cput;
  */
 public class App 
 {
+    private String Name,Surname;
 
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
 }
