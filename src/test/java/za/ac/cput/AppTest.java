@@ -1,20 +1,43 @@
 package za.ac.cput;
 
-import static org.junit.Assert.assertTrue;
-
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.BeforeEach;
+
+import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
+
+
+    @Before
+    public void setupTest()
     {
-        assertTrue( true );
+
+
     }
+    @Test
+    public void testIdentity()
+    {
+
+    }
+
+    @Test
+public void testEquality()
+{
+
+}
+
+
+@Disabled
+    public void disable()
+{
+    disable();
+}
+
 }
