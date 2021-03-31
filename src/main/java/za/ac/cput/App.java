@@ -6,23 +6,21 @@ package za.ac.cput;
  */
 public class App 
 {
-    private Long id;
+
     private String name;
     private Integer age;
 
-    public App (Long id, String name, Integer age) {
-        this.id = id;
+    public App (String name, Integer age) {
+
         this.name = name;
         this.age = age;
     }
 
-    public Long getId() {
-        return id;
+    public App()
+    {
+
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -38,5 +36,13 @@ public class App
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "App{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
