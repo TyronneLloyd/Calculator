@@ -5,14 +5,12 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
     Calculator c = new Calculator(1, 2);
-    int val =1;
 
     @BeforeEach
     void setUp() {
@@ -28,22 +26,23 @@ class CalculatorTest {
         assertSame(2, c.getSecondNumber());
     }
     @Test
-    void fail(){
-        fail();
-        c.setFirstNumber(1);
-        c.setSecondNumber(2);
+    void failed(){
+        fail("Failed on purpose");
+        while (true)
+            System.out.println("If executes, fail() did not work");
 
     }
     @Test
     @Disabled
     void disable(){
-        while (true)
-            System.out.println("If executes, disabled failed");
+        c.setFirstNumber(1);
+        c.setSecondNumber(2);
     }
 
     @Test
-    //@Timeout(value = 1, unit = TimeUnit.SECONDS)
-    void timeOut(){
-
+    @Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
+    void timeOut() throws InterruptedException {
+        Thread.sleep(200);
+        System.out.println("Time out test");
     }
 }
