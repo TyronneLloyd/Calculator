@@ -8,6 +8,8 @@ package za.ac.cput;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalTest {
@@ -37,17 +39,19 @@ class AnimalTest {
     }
     @Test
     void failingTest() {
-        assertSame(animal1.getBreed(), animal3.getBreed());
+        fail("Test failed");
 
         }
+    @Timeout()
     @Test
     void timeouts() {
-
+        assertEquals(animal1, animal4);
     }
 
     @Disabled
     @Test
     void disablingTest() {
         assertNotEquals(animal1.getAge(), animal2.getAge());
+        System.out.println("Disabled By Rick Herbert");
     }
 }
