@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Timeout;
 import static org.junit.Assert.*;
 
 /**
+ * author : Asiphiwe Hanjiwe 218336675
  * Unit test for simple App.
  */
 public class AppTest {

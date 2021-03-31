@@ -6,7 +6,6 @@ package za.ac.cput;
  */
 public class App 
 {
-
     private String name;
     private Integer age;
 
