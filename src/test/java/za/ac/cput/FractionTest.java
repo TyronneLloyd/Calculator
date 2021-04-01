@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Timeout;
 import za.ac.cput.za.ac.cput.Calculator.Fraction;
 
 import java.util.concurrent.TimeUnit;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FractionTest
@@ -44,7 +43,7 @@ public class FractionTest
         }
 
         @Test
-        @Timeout(value = 100,unit = TimeUnit.MILLISECONDS)
+        @Timeout(value = 500,unit = TimeUnit.MILLISECONDS)
         void timeOut() throws InterruptedException
         {
              Thread.sleep(100);
