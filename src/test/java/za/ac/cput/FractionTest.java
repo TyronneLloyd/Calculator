@@ -31,7 +31,7 @@ public class FractionTest
         void failed(){
             fail("Failed on purpose");
             while (true)
-                System.out.println("If executes, fail() did not work");
+                System.out.println("If executes, it did not work");
 
         }
         @Test
