@@ -1,6 +1,5 @@
-#Files to ignore
-#IntelliJ specifics
+#files to ignore
 
 /.idea/
+*.iml
 *.xml
-
