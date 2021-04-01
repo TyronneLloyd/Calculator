@@ -1,5 +1,10 @@
 package za.ac.cput;
-
+/**
+ * @Author: Tyronne Lloyd Hendricks
+ * @Student Number: 215141210
+ * @Date: 25/03/2021
+ * @Description: Junit Testing
+ */
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
