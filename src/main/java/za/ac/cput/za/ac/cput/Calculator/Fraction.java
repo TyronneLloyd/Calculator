@@ -1,7 +1,7 @@
 package za.ac.cput.za.ac.cput.Calculator;
 
 /**
- * Author:Asiphiwe Hanjiwe 218336675
+ * @Author:Asiphiwe Hanjiwe 218336675
  * This program calculates fraction
  */
 public class Fraction
