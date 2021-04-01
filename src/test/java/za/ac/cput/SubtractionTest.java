@@ -1,5 +1,8 @@
 package za.ac.cput;
 
+import org.junit.jupiter.api.Disabled;
+
+
 /*
     Elrich Herman
     218150040
@@ -9,6 +12,8 @@ package za.ac.cput;
 
 
 import org.junit.jupiter.api.*;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,7 +48,7 @@ class SubtractionTest {
     }
 
     @Test
-    @Timeout(5)
+    @Timeout(unit = TimeUnit.MILLISECONDS, value = 5)
     void TimeoutCheck() {
         for(int i=0; i<5; i++) {
             System.out.println(i);
