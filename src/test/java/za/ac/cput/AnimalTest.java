@@ -10,6 +10,8 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalTest {
@@ -42,7 +44,7 @@ class AnimalTest {
         fail("Test failed");
 
         }
-    @Timeout()
+    @Timeout(value = 20, unit = TimeUnit.MILLISECONDS)
     @Test
     void timeouts() {
         assertEquals(animal1, animal4);
