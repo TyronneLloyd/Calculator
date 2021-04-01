@@ -38,20 +38,20 @@ class CalculatorTest {
     }
 
     @Test
-    void failed(){
+    void testFailed(){
         fail("Checking if test fails");
     }
 
     @Test
     @Timeout(value = 15, unit = TimeUnit.MILLISECONDS)
-    void timeouts(){
+    void testTimeouts(){
         System.out.println("Test takes 15 seconds to complete.");
     }
 
 
     @Test
     @Disabled
-    void disabling(){
+    void testDisabling(){
         sum1.toString();
     }
 
