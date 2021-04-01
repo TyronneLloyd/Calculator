@@ -3,10 +3,7 @@ package za.ac.cput;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
 import za.ac.cput.za.ac.cput.Calculator.Fraction;
-
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,21 +14,21 @@ public class FractionTest
         @BeforeEach
 
         @Test
-       void objectEquality()
+       void testEquality()
         {
             assertEquals(12.0,f.getNumerator());
 
           }
         @Test
-        void objectIdentity()
+        void testIdentity()
         {
       assertNotSame(10.0,f.getDenominator());
         }
         @Test
-        void failed(){
+        void testFail(){
             fail("Failed on purpose");
-            while (true)
-                System.out.println("If executes, it did not work");
+            while (true);
+
 
         }
         @Test
@@ -41,9 +38,9 @@ public class FractionTest
 
         }
         @Test
-        @Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
-        void timeOut() throws InterruptedException {
-            Thread.sleep(200);
+        void timeOut()
+        {
+           while (true)
             System.out.println("Time is out of test");
         }
 
