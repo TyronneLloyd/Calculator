@@ -2,7 +2,9 @@ package za.ac.cput.za.ac.cput.Calculator;
 
 /**
  * @Author:Asiphiwe Hanjiwe 218336675
- * This program calculates fraction.
+ * This program calculates fraction(A fraction have a numerator and denominator)
+ * 31 March 2021
+ * Application Development Practice 3
  */
 public class Fraction
 {

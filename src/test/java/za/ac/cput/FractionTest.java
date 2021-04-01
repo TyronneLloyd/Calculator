@@ -1,9 +1,17 @@
 package za.ac.cput;
-
+/**
+ * @Author:Asiphiwe Hanjiwe 218336675
+ * This program test fraction which was its calculation was performed in Fraction java class.
+ * 31 March 2021
+ * Applications Development Practice 3
+ */
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import za.ac.cput.za.ac.cput.Calculator.Fraction;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -28,20 +36,19 @@ public class FractionTest
         void testFail(){
             fail("Failed on purpose");
             while (true);
-
-
         }
         @Test
         @Disabled
         void disable(){
             f.setNumerator(12);
-
         }
+
         @Test
-        void timeOut()
+        @Timeout(value = 100,unit = TimeUnit.MILLISECONDS)
+        void timeOut() throws InterruptedException
         {
-           while (true)
-            System.out.println("Time is out of test");
+             Thread.sleep(100);
+            System.out.println("Time up for test");
         }
 
     }
