@@ -1,4 +1,4 @@
-package za.ac.cput.Calculator;
+package za.ac.cput;
 
 /**
  * @Author: Cole Hanekom
@@ -6,9 +6,8 @@ package za.ac.cput.Calculator;
  * @Date: 26/03/2021
  */
 
-public class Calculate {
+public class Square {
     public double square(double i) {
         return i*i;
     }
-
 }

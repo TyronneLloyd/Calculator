@@ -1,4 +1,4 @@
-package za.ac.cput.Calculator;
+package za.ac.cput;
 
 /**
  * @Author: Cole Hanekom
@@ -9,18 +9,17 @@ package za.ac.cput.Calculator;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculateTest {
-
-    private Calculate calculate;
-    private Calculate calculate1;
-    private Calculate calculate2;
-    private Calculate calculate3;
+public class SquareTest {
+    private Square calculate;
+    private Square calculate1;
+    private Square calculate2;
+    private Square calculate3;
 
     @BeforeEach
     void setUp() {
-        this.calculate = new Calculate();
-        calculate1 = new Calculate();
-        calculate2 = new Calculate();
+        this.calculate = new Square();
+        calculate1 = new Square();
+        calculate2 = new Square();
         calculate3 =  calculate1;
     }
 
