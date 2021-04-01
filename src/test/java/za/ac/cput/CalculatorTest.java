@@ -3,7 +3,6 @@ package za.ac.cput;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
 
 import java.util.concurrent.TimeUnit;
 
@@ -40,9 +39,9 @@ class CalculatorTest {
     }
 
     @Test
-    @Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
+    @org.junit.jupiter.api.Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
     void timeOut() throws InterruptedException {
         Thread.sleep(200);
-        System.out.println("Time out test");
+        System.out.println("If reaches this block Timeout test failed");
     }
 }
