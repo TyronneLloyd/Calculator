@@ -2,7 +2,7 @@ package za.ac.cput.za.ac.cput.Calculator;
 
 /**
  * @Author:Asiphiwe Hanjiwe 218336675
- * This program calculates fraction
+ * This program calculates fraction. Denominator and Numerator is the focus.
  */
 public class Fraction
 {
