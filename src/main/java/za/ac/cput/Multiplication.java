@@ -4,12 +4,12 @@ package za.ac.cput;
 Grant Hendricks
 28 March 2021
  */
-public class Calculator {
+public class Multiplication {
 
     public int a;
     public int b;
 
-    public Calculator(int num1, int num2){
+    public Multiplication(int num1, int num2){
         this.a = num1;
         this.b = num2;
     }

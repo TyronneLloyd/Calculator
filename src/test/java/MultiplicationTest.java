@@ -2,7 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import za.ac.cput.Calculator;
+import za.ac.cput.Multiplication;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,9 +14,9 @@ Grant Hendricks
 28 March 2021
  */
 
-class CalculatorTest {
+class MultiplicationTest {
 
-    Calculator sum1 = new Calculator(5,6);
+    Multiplication sum1 = new Multiplication(5,6);
 
     public int a;
     public int b;
